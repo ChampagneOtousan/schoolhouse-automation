@@ -12,7 +12,7 @@ require_relative 'grade'
 
 # Create test students with grades in various subjects
 def generate_student
-  s = Student.new(Faker::Name.name, rand(11..20))
+  s = Student.new(Faker::Name.name, rand(1..20))
   s.report_card.add_grade("math", rand(0..100))
   s.report_card.add_grade("history", rand(0..100))
   s.report_card.add_grade("english", rand(0..100))
